@@ -53,6 +53,21 @@
   color: var(--text-color);
 }
 
+/* Home Page styling */
+.hero {
+  background-color: var(--Hero-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 120px 50px;
+}
+
+.hero-text {
+  color: var(--text-color);
+  font-size: 40px;
+  font-weight: 400;
+  word-spacing: 1px;
+}
+
 /* adding media queries for the responsive behaviour */
 
 /* for mobile screen max-width = 480px */
@@ -66,5 +81,12 @@
     margin: 10px 0px 0px 0px;
     width: 100%;
     text-align: center;
+  }
+
+  .hero {
+    padding: 60px 25px;
+  }
+  .hero-text {
+    font-size: 25px;
   }
 }
