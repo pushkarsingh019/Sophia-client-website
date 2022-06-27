@@ -1,0 +1,70 @@
+/* defining the global colours */
+:root {
+  --Hero-color: #ffb6b6;
+  --second-color: #faf1e6;
+  --text-color: #2c3639;
+  --cta-color: #000000;
+  --about-section-color: #fff8a6;
+}
+
+/* importing the Libre BaskerVille font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  /* font-family: "Libre Baskerville", serif; */
+}
+
+/* Navigation section */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--second-color);
+  padding: 18px 15px;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  display: block;
+  margin: 0 1rem;
+  transform: 0.2s ease-in-out;
+}
+
+/* for the hover effects */
+.nav-list-item :hover {
+  font-size: 1.08rem;
+}
+
+/* router-link : a class for all the text that needs to be a react router Link but not look that part explicityl */
+.router-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* adding media queries for the responsive behaviour */
+
+/* for mobile screen max-width = 480px */
+@media (max-width: 600px) {
+  .navigation {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-list-item {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    text-align: center;
+  }
+}
