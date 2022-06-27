@@ -68,6 +68,41 @@
   word-spacing: 1px;
 }
 
+/* writing general rules for a section in the web page */
+.section {
+  padding: 80px;
+}
+
+/* writing css for youtube section  */
+.youtube-section {
+  background-color: var(--second-color);
+  text-align: center;
+}
+
+.youtube-section h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.youtube-section h3 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #2c363995;
+}
+
+.section-grid {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+iframe {
+  border-radius: 16px;
+}
+
 /* adding media queries for the responsive behaviour */
 
 /* for mobile screen max-width = 480px */
@@ -88,5 +123,21 @@
   }
   .hero-text {
     font-size: 25px;
+  }
+
+  .section {
+    padding: 50px 40px;
+  }
+
+  .youtube-section h1 {
+    font-size: 25px;
+  }
+
+  .youtube-section h3 {
+    font-size: 20px;
+  }
+
+  iframe {
+    margin: 1rem 0rem 1rem 0rem;
   }
 }
