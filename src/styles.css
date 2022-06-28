@@ -222,6 +222,28 @@ h5 {
   font-size: 1.1rem;
 }
 
+/* styling the about section */
+.about-section {
+  background-color: var(--about-section-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about-section h1 {
+  font-size: 2rem;
+}
+
+.about-section p {
+  font-size: 17px;
+}
+
+.sophia-image {
+  text-align: center;
+}
+
 /* adding media queries for the responsive behaviour */
 
 /* for mobile screen max-width = 480px */
@@ -297,6 +319,18 @@ h5 {
   .podcast-apps {
     width: 100%;
     text-align: center;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse;
+    /* text-align: center; */
+  }
+
+  .sophia-image img {
+    width: 200px;
+    text-align: left;
+    margin: 0px 0px 25px 0px;
   }
 
   .footer {
