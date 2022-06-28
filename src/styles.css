@@ -244,6 +244,63 @@ h5 {
   text-align: center;
 }
 
+/* styling the community page */
+.community-hero {
+  background-color: var(--Hero-color);
+  font-weight: 400;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 150px;
+}
+
+.community-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 1.5;
+}
+
+.community-info h1,
+p {
+  text-align: left;
+}
+
+.community-info p {
+  font-size: 1.2rem;
+}
+
+.community-youtube-embed iframe {
+  width: 100%;
+}
+
+.about-community-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 80px;
+  background-color: var(--second-color);
+  font-weight: 400;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.about-text img {
+  width: 300px;
+  height: 51px;
+}
+
+.community-screenshot img {
+  width: 540px;
+  height: 331px;
+}
 /* adding media queries for the responsive behaviour */
 
 /* for mobile screen max-width = 480px */
@@ -342,5 +399,29 @@ h5 {
 
   .footer div {
     margin: 1rem 0rem;
+  }
+
+  .community-hero {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-community-section {
+    display: block;
+    text-align: center;
+  }
+
+  .about-text {
+    margin: 1.5rem 0rem;
+  }
+  .about-text img {
+    width: 250px;
+    height: 49px;
+    margin-bottom: 2rem;
+  }
+
+  .community-screenshot img {
+    width: 100%;
   }
 }
