@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import ReviewCard from "../components/ReviewCard";
+import CTA from "../components/CTA";
 
 export default function CommunityScreen() {
   function HeroCommunity() {
@@ -62,6 +64,34 @@ export default function CommunityScreen() {
     );
   }
 
+  function Features() {
+    return (
+      <section className="section features">
+        <div className="features-text">
+          <h1>The Perks...</h1>
+          <br />
+          <h3>What We Do</h3>
+          <br />
+          <br />
+          <p>
+            We have monthly calls, an engaging group chat, social events, game
+            nights, and accountability. The content creator journey doesn’t have
+            to be lonely anymore.
+          </p>
+        </div>
+        <div className="features-card">this is a sample card</div>
+      </section>
+    );
+  }
+
+  function Review() {
+    return (
+      <section className="section review">
+        <h1>What The Members Say</h1>
+      </section>
+    );
+  }
+
   return (
     <div className="screen">
       <header>
@@ -70,8 +100,17 @@ export default function CommunityScreen() {
       <main>
         <HeroCommunity />
         <AboutCommunity />
+        <Features />
+        <Review />
+        <CTA
+          text="The Creator Community You Need"
+          ctaText="Join Now"
+          redirect="https://docs.google.com/forms/d/e/1FAIpQLSfI-KwLBxsiG_NKoe4y-eBv0Gmx-BCVh8c_a2L2AXwCC94Dfw/viewform"
+        />
       </main>
-      <footer>{/* <Footer /> */}</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

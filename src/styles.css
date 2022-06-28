@@ -301,6 +301,21 @@ p {
   width: 540px;
   height: 331px;
 }
+
+.features {
+  background-color: var(--Hero-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.features-text {
+  text-align: left;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
 /* adding media queries for the responsive behaviour */
 
 /* for mobile screen max-width = 480px */
