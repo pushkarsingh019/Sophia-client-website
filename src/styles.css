@@ -5,6 +5,7 @@
   --text-color: #2c3639;
   --cta-color: #000000;
   --about-section-color: #fff8a6;
+  --grey-color: #7f8487;
 }
 
 /* importing the Libre BaskerVille font from google fonts */
@@ -71,6 +72,7 @@
 /* writing general rules for a section in the web page */
 .section {
   padding: 80px;
+  text-align: center;
 }
 
 /* writing css for youtube section  */
@@ -79,12 +81,12 @@
   text-align: center;
 }
 
-.youtube-section h1 {
+.section h1 {
   font-size: 40px;
   font-weight: 400;
 }
 
-.youtube-section h3 {
+.section h3 {
   font-size: 25px;
   font-weight: 400;
   color: #2c363995;
@@ -97,10 +99,127 @@
   gap: 1.2rem;
   flex-wrap: wrap;
   text-align: center;
+  /* border: 3px solid green; */
 }
 
 iframe {
   border-radius: 16px;
+}
+
+/* desinging the community section */
+.community-section {
+  background-color: var(--Hero-color);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+}
+
+/* desinging the card */
+.card {
+  background-color: #ffffff;
+  padding: 35px;
+  line-height: 1.7;
+  border-radius: 22px;
+  width: 379px;
+  height: 262px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 300;
+  /* line-height: 2.5rem; */
+}
+
+.card img {
+  margin: 10px 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.reviewer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.reviewer-name-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name-title h4,
+h5 {
+  font-weight: 300;
+}
+
+.reviewer-name-title h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.reviewer-name-title h5 {
+  font-size: 15px;
+  font-weight: 100;
+  color: var(--grey-color);
+}
+
+/* styling the podcast section of the home screen */
+.podcast-section {
+  background-color: var(--second-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+}
+
+.podcast-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 400;
+}
+
+.podcast-app-logo {
+  width: 25px;
+  margin: 0rem 2rem 0rem 0.5rem;
+}
+
+.podcast-image img {
+  width: 700px;
+  border-radius: 25px;
+}
+
+.podcast-apps {
+  margin: 2.5rem 0rem;
+}
+
+/* Call to action button */
+.cta-button {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+
+/* styling the cta section */
+.cta-section {
+  background-color: var(--Hero-color);
+}
+
+/* footer */
+.footer {
+  padding: 30px 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--second-color);
+  font-size: 1.1rem;
 }
 
 /* adding media queries for the responsive behaviour */
@@ -129,15 +248,64 @@ iframe {
     padding: 50px 40px;
   }
 
-  .youtube-section h1 {
+  .section h1 {
     font-size: 25px;
   }
 
-  .youtube-section h3 {
+  .section h3 {
     font-size: 20px;
   }
 
   iframe {
     margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .card {
+    padding: 20px;
+    line-height: 1.5;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .podcast-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .podcast-section h1,
+  h3 {
+    text-align: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .podcast-info {
+    margin: 1.5rem 0rem;
+  }
+
+  .podcast-image img {
+    width: 250px;
+    overflow: hidden;
+  }
+
+  .podcast-apps {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 12px 15px;
+    display: block;
+    text-align: center;
+  }
+
+  .footer div {
+    margin: 1rem 0rem;
   }
 }
