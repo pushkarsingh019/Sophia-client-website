@@ -321,22 +321,23 @@ h5 {
     text-align: center;
   }
 
-  .about-section {
-    display: flex;
-    flex-direction: column-reverse;
-    /* text-align: center; */
-  }
-
-  .sophia-image img {
-    width: 200px;
-    text-align: left;
-    margin: 0px 0px 25px 0px;
-  }
-
   .footer {
     padding: 12px 15px;
     display: block;
     text-align: center;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-section h1 {
+    text-align: center;
+  }
+
+  .sophia-image {
+    margin: 0px 0px 20px 0px;
   }
 
   .footer div {
