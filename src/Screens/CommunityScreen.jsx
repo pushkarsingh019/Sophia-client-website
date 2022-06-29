@@ -5,6 +5,10 @@ import Button from "../components/Button";
 import ReviewCard from "../components/ReviewCard";
 import CTA from "../components/CTA";
 
+// importing data
+import { featuresOne, featuresTwo } from "../data/features";
+import FeatureCard from "../components/FeatureCard";
+
 export default function CommunityScreen() {
   function HeroCommunity() {
     return (
@@ -79,7 +83,27 @@ export default function CommunityScreen() {
             to be lonely anymore.
           </p>
         </div>
-        <div className="features-card">this is a sample card</div>
+        <div className="features-grid">
+          {featuresOne.map((feature) => {
+            return (
+              <FeatureCard
+                iconClass={feature.imageSource}
+                feature={feature.feature}
+                featureDescription={feature.featureDescription}
+              />
+            );
+          })}
+
+          {featuresTwo.map((feature) => {
+            return (
+              <FeatureCard
+                iconClass={feature.imageSource}
+                feature={feature.feature}
+                featureDescription={feature.featureDescription}
+              />
+            );
+          })}
+        </div>
       </section>
     );
   }

@@ -7,11 +7,11 @@ export default function FeatureCard({
 }) {
   return (
     <div className="feature-card">
-      <i className={iconClass}></i>
+      <img src={iconClass} alt={feature} />
       <br />
       <h2>{feature}</h2>
       <br />
-      <p>{featureDescription}</p>
+      <p className="feature-description">{featureDescription}</p>
     </div>
   );
 }
