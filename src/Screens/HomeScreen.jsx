@@ -2,7 +2,7 @@ import React from "react";
 import ReviewCard from "../components/ReviewCard";
 
 // importing data
-import reviews from "../data/reviews";
+import { reviews } from "../data/reviews";
 import podcastApps from "../data/podcastApps";
 
 // importing components for home screen

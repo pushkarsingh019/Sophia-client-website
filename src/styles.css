@@ -360,6 +360,47 @@ p {
   font-size: 1.1rem;
 }
 
+.review {
+  background-color: var(--second-color);
+  padding: 80px;
+}
+
+.review .reviews-grid {
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.community-review {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px 25px;
+  border-radius: 17px;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.community-review .review-text {
+  margin: 10px 0px;
+}
+
+.community-review .reviewer-image img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 1rem;
+  color: var(--grey-color);
+}
+
 /* adding media queries for the responsive behaviour */
 
 /* for mobile screen max-width = 480px */
@@ -491,5 +532,13 @@ p {
   .features-grid {
     margin: 1.5rem 0rem;
     columns: 1;
+  }
+
+  .review .reviews-grid {
+    display: block;
+  }
+
+  .community-review {
+    margin: 1.5rem 0rem;
   }
 }

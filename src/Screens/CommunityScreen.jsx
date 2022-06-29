@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import ReviewCard from "../components/ReviewCard";
 import CTA from "../components/CTA";
+import CommunityReview from "../components/CommunityReview";
+import { communityReview } from "../data/reviews";
 
 // importing data
 import { featuresOne, featuresTwo } from "../data/features";
@@ -112,6 +114,18 @@ export default function CommunityScreen() {
     return (
       <section className="section review">
         <h1>What The Members Say</h1>
+        <div className="reviews-grid">
+          {communityReview.map((review) => {
+            return (
+              <CommunityReview
+                name={review.name}
+                title={review.title}
+                review={review.review}
+                imageSource={review.imageSource}
+              />
+            );
+          })}
+        </div>
       </section>
     );
   }
